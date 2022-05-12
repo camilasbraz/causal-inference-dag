@@ -131,4 +131,48 @@ X é uma causa de Y
 
 ### Caminhos causais e caminhos backdoor
 Caminho: formas de passar pelas variáveis. Eles podem ser causais ou backdoor, que são caminhos enviesantes (confusão e viéses). 
-Os caminhos backdoor podem ser identificados formalmente ![Screen Shot 2022-05-11 at 20 10 10](https://user-images.githubusercontent.com/45129483/167961982-f0f12358-57d5-46cc-9197-33f4027848f1.png)
+Os caminhos backdoor podem ser identificados formalmente
+
+![Screen Shot 2022-05-11 at 20 10 10](https://user-images.githubusercontent.com/45129483/167961982-f0f12358-57d5-46cc-9197-33f4027848f1.png)
+
+## #7 Inferência causal (aula 2, parte 3/7) | Gráficos acíclicos direcionados: d-separação e d-conexão
+
+#### d-separação e d-conexão
+Duas variáveis estão d-separadas se não há caminhos abertos entre elas. Do contraário, diz-se que estão d-conectadas.
+
+##### REGRA 1: A presença de uma variável de colisão automaticamente bloqueia o caminho
+
+![Screen Shot 2022-05-11 at 21 39 31](https://user-images.githubusercontent.com/45129483/167969450-89b6be9c-6f05-4acc-a9c5-4cf4044564f1.png)
+![Screen Shot 2022-05-11 at 21 40 43](https://user-images.githubusercontent.com/45129483/167969526-f9853e21-b6b1-48e1-ab91-43936aee09dd.png)
+
+Não é porque duas veriáveis tem efeito casusal sobre uma terceira variável não significa que exista uma relação entre elas
+
+
+##### REGRA 2: Ajustar uma variável de colisão abre o caminho para suas variáveis pai
+(caixa --> ajustar)
+![Screen Shot 2022-05-11 at 21 44 14](https://user-images.githubusercontent.com/45129483/167969837-c93e2c69-df00-407f-8d28-dfa11ee5e403.png)
+
+#### REGRA 2b: Ajustar uma variável para um descendente de collider também abre o caminho
+
+![Screen Shot 2022-05-11 at 21 45 08](https://user-images.githubusercontent.com/45129483/167969929-6e5b2dd6-db9a-4e8f-a32a-1fd6cc7819cb.png)
+
+
+Problema de ajustar um collider:
+
+Exemplo com estratificação: só pegamos imóveis baratos
+![Screen Shot 2022-05-11 at 21 47 37](https://user-images.githubusercontent.com/45129483/167970107-4d471809-0962-4b87-824d-eed62152c090.png)
+
+#### REGRA 3: Ajustar para pelo menos uma variável não collider bloqueia o caminho entre as variáveis pai
+
+![Screen Shot 2022-05-11 at 21 50 29](https://user-images.githubusercontent.com/45129483/167970333-2d3944ca-8da1-4a16-b31d-b6af150c5cfa.png)
+
+Juntando as 3 regras: condicionar, ajustar ou controlar uma variável inverte seu papel com relação à d-conexão e d-separação
+
+#### REGRA DA COMPATIBILIDADE: Se duas variáveis estão d-separadas, elas não têm associação estatística.
+
+![Screen Shot 2022-05-11 at 21 54 07](https://user-images.githubusercontent.com/45129483/167970641-b2f9448d-5989-44d6-afc2-3369591283fc.png)
+
+#### REGRA DA FIDELIDADE: Se existe um ou mais caminhos abertos entre duas variáveis, em geral, estas variáveis apresentarão associação estatística
+(Fidelidade perfeita(existe associação estatística) x fidelidade imperfeita(pode existir associação estatística))
+![Screen Shot 2022-05-11 at 21 56 23](https://user-images.githubusercontent.com/45129483/167970820-23a0a46f-0a9b-4332-993c-a2923a622f41.png)
+
