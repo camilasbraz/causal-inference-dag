@@ -150,6 +150,7 @@ Não é porque duas veriáveis tem efeito casusal sobre uma terceira variável n
 
 ##### REGRA 2: Ajustar uma variável de colisão abre o caminho para suas variáveis pai
 (caixa --> ajustar)
+
 ![Screen Shot 2022-05-11 at 21 44 14](https://user-images.githubusercontent.com/45129483/167969837-c93e2c69-df00-407f-8d28-dfa11ee5e403.png)
 
 #### REGRA 2b: Ajustar uma variável para um descendente de collider também abre o caminho
@@ -175,4 +176,56 @@ Juntando as 3 regras: condicionar, ajustar ou controlar uma variável inverte se
 #### REGRA DA FIDELIDADE: Se existe um ou mais caminhos abertos entre duas variáveis, em geral, estas variáveis apresentarão associação estatística
 (Fidelidade perfeita(existe associação estatística) x fidelidade imperfeita(pode existir associação estatística))
 ![Screen Shot 2022-05-11 at 21 56 23](https://user-images.githubusercontent.com/45129483/167970820-23a0a46f-0a9b-4332-993c-a2923a622f41.png)
+
+## #8 Inferência causal (aula 2, parte 4/7) | Utilizando DAGs para identificação e ajuste para vieses
+
+#### Critério backdoor para reduzir viés
+1) Excluir todas as setas que saem de X
+ - Desse modo, qualquer associação entre X e Y deve-se a viés
+2) Identificar todos os caminhos abertos de X até
+ - Se houverem, os caminhos abertos de X até y são backdoor
+3) Bloquear todos os caminhos identificados no passo 2
+ - Cuidados:
+  - Não abrir caminhos backdoor ao ajustar coliders
+  - Não ajustar para descendentes de X
+4) Avaliar a associação entre X e Y ajustando para um conjunto de variáveus que, com base no DAG, bloqueiam todos os caminhos backdoor
+ - Espera-se que não exista associação, a menos que exista um caminho causal entre X e Y
+
+Lembrar de não ajustar para mediadores
+
+## #9 Inferência causal (aula 2, parte 5/7) | Definição de confundimento utlizando DAGs
+
+#### Gráfico M
+
+![Screen Shot 2022-05-11 at 22 27 05](https://user-images.githubusercontent.com/45129483/167973631-01636722-c69c-49ab-a49c-6e15b8bacf68.png)
+
+U é um confudidor??
+
+![Screen Shot 2022-05-11 at 22 28 02](https://user-images.githubusercontent.com/45129483/167973719-5aa9488a-e06a-42b1-a0c3-dccd127b1323.png)
+
+Exemplo: 
+![Screen Shot 2022-05-11 at 22 34 52](https://user-images.githubusercontent.com/45129483/167974328-8c6cbdfa-6c05-4a8e-bcbf-7cb483059c7d.png)
+
+
+![Screen Shot 2022-05-11 at 22 52 09](https://user-images.githubusercontent.com/45129483/167976146-6261a35d-d67d-4c0c-9e02-2af795527c22.png)
+
+
+##### Definição estrutural de confundimento: Leva em consideração o DAG, biés devido a causas comuns entre X e Y
+##### Definição de confundidor: ao ser ajustado, fechamos o caminho backdoor
+
+
+![Screen Shot 2022-05-11 at 22 57 53](https://user-images.githubusercontent.com/45129483/167976745-d5bc40d9-948c-4589-8b26-5e603d487931.png)
+
+
+1) Sim, confundidor
+2) Não, não confundidor
+3) Não, confundidor
+4) Sim,  não confundidor
+
+
+## #10 Inferência causal (aula 2, parte 6/7) | Representando viés de seleção e viés de informação nos DAGs
+
+
+
+
 
