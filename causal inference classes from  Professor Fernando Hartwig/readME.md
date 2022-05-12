@@ -104,8 +104,31 @@ Em estudos perfeitos, não temos o problema fundamental da inferência causal, m
 
 ## #4 Inferência causal (aula 1, parte 4/4) | Resumo da aula 1
 
+## #5 Inferência causal (aula 2, parte 1/7) | Introdução aos gráficos acíclicos direcionados
+DAGs: codificar de forma gráfica os pressupostos da inferência causal
 
+##### TEMPORALIDADE 
 
+Gráfico: representação gráfica das relações causais entre as variáveis
+Direcionados: relações de causa e consequência mostradas por setas
+Acíclios: não formam ciclos 
 
+![Screen Shot 2022-05-11 at 19 49 25](https://user-images.githubusercontent.com/45129483/167959930-feb75c39-c7a9-4517-a24e-dd720bb22c20.png)
 
+Permite idenficar confundidores, mediadores e outros vieses
 
+Exemplo de uma DAG:
+
+![Screen Shot 2022-05-11 at 19 55 43](https://user-images.githubusercontent.com/45129483/167960574-732bfe64-894e-4eb6-97a1-6076c2db096f.png)
+
+Desenhar ou não desenhar uma seta é uma afirmação entre as relações causais das variáveis
+
+## #6 Inferência causal (aula 2, parte 2/7) | Terminologia e interpretação dos DAGs
+Exemplos de dags, interpretações e terminologias:
+X é uma causa de Y
+![Screen Shot 2022-05-11 at 19 59 41](https://user-images.githubusercontent.com/45129483/167960990-86e6bb72-0057-43b2-b615-b0ebc2d8e69d.png)
+![Screen Shot 2022-05-11 at 20 03 07](https://user-images.githubusercontent.com/45129483/167961309-fcd9af68-c114-40e4-b8ac-bafd1a48ed85.png)
+
+### Caminhos causais e caminhos backdoor
+Caminho: formas de passar pelas variáveis. Eles podem ser causais ou backdoor, que são caminhos enviesantes (confusão e viéses). 
+Os caminhos backdoor podem ser identificados formalmente ![Screen Shot 2022-05-11 at 20 10 10](https://user-images.githubusercontent.com/45129483/167961982-f0f12358-57d5-46cc-9197-33f4027848f1.png)
