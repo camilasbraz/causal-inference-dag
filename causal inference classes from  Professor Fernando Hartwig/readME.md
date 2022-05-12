@@ -295,7 +295,7 @@ Importante em estudos observacionais: permutabilidade marginal é pouco plausív
 
 ## #13 Inferência causal (aula 3, parte 2/6) | Componentes do efeito causal médio
 
-
+Efeito causal médio: média do desfecho na população em dois casos, se toda a população for exposta e se toda ela não for exposta
 
 
 
