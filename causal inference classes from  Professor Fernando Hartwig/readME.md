@@ -256,7 +256,7 @@ Refere-se à mensuração de variáveis
 
 Associação espúria: relação estatística entre duas variáveis sem sem ser de causa e efeito
 
-Proxy: variáveis mensráveis relacionadas a um conceito
+Proxy: variáveis mensuráveis relacionadas a um conceito
 
 
 ## #11 Inferência causal (aula 2, parte 7/7) | Resumo da aula 2
