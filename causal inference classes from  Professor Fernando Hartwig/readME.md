@@ -263,6 +263,7 @@ Proxy: variáveis mensuráveis relacionadas a um conceito
 
 
 
+![Screen Shot 2022-05-11 at 23 49 09](https://user-images.githubusercontent.com/45129483/167982139-920f0ad4-b782-4981-9c00-36258c335f43.png)
 
 
 
