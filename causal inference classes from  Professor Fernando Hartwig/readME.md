@@ -225,6 +225,46 @@ Exemplo:
 
 ## #10 Inferência causal (aula 2, parte 6/7) | Representando viés de seleção e viés de informação nos DAGs
 
+#### Viés de seleção
+Distorção da associação causada pelo processo de seleção dos indivíduos para a análise
+
+- No processo de amostragem (viés de sobrevivência)
+- Após a amostragem (critérios de exclusão, recusa, perdas. por acompanhamento, análises estratificadas)
+
+
+
+![Screen Shot 2022-05-11 at 23 13 42](https://user-images.githubusercontent.com/45129483/167978381-f593cfab-9208-4797-a4a9-a1674afa4539.png)
+
+Dependendo do padrão de perdas, a validade/qualidade do estudo pode ser perdida
+
+
+
+![Screen Shot 2022-05-11 at 23 17 34](https://user-images.githubusercontent.com/45129483/167978796-05303544-67b7-4d02-af23-e5a346d4bc8a.png)
+
+
+#### Viés de Informação
+Refere-se à mensuração de variáveis
+
+![Screen Shot 2022-05-11 at 23 24 19](https://user-images.githubusercontent.com/45129483/167979559-c55365b4-6f9e-4b5b-96a1-d81a6e810ff9.png)
+
+
+
+
+
+![Screen Shot 2022-05-11 at 23 29 34](https://user-images.githubusercontent.com/45129483/167980040-b2e65c7f-4507-4f5d-b6a6-219122e6521e.png)
+
+
+Associação espúria: relação estatística entre duas variáveis sem sem ser de causa e efeito
+
+Proxy: variáveis mensráveis relacionadas a um conceito
+
+
+## #11 Inferência causal (aula 2, parte 7/7) | Resumo da aula 2
+
+
+
+
+
 
 
 
