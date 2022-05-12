@@ -266,6 +266,62 @@ Proxy: variáveis mensuráveis relacionadas a um conceito
 ![Screen Shot 2022-05-11 at 23 49 09](https://user-images.githubusercontent.com/45129483/167982139-920f0ad4-b782-4981-9c00-36258c335f43.png)
 
 
+## #12 Inferência causal (aula 3, parte 1/6) | DAGs x pressuposto de permutabilidade
+
+Permutabilidade: ausência de viés sistmático (causas comuns não controladas nas análises (confundimento ou erro de medida diferencial) e consequências comuns ajustadas nas análises (dados faltantes ou estratégias de análises inadequadas))
+
+
+A partir dos pressuposto sobre interrelações causais entre as variáveis, podemos utilizar as DAGs para concluir se o pressuposto de permutabilidade é cumprido ou violado (se for violado, arrumar (com variáveis de ajuste, por exemplo))
+
+
+
+<img width="556" alt="Screen Shot 2022-05-12 at 10 13 53" src="https://user-images.githubusercontent.com/45129483/168083031-ea11c39a-eeda-4adf-96d1-e885b6700d5c.png">
+<img width="505" alt="Screen Shot 2022-05-12 at 10 14 50" src="https://user-images.githubusercontent.com/45129483/168083222-8561be10-ec74-4712-ac5f-c053a11a9b52.png">
+
+<img width="506" alt="Screen Shot 2022-05-12 at 10 16 54" src="https://user-images.githubusercontent.com/45129483/168083593-8b355122-6d3f-4f70-bb5d-c29363ef5b77.png">
+
+### Permutabilidade marginal e condicional
+
+<img width="311" alt="Screen Shot 2022-05-12 at 10 19 33" src="https://user-images.githubusercontent.com/45129483/168084136-fe45211b-1cf8-45a2-b348-936d38aff963.png">
+
+
+<img width="482" alt="Screen Shot 2022-05-12 at 10 20 36" src="https://user-images.githubusercontent.com/45129483/168084362-c5296e72-82ae-41a0-b560-2b5c42690312.png">
+ 
+#### Permutabiliadde marginal: expostos e não expostos são permutáveis sem ajuste para nenhuma variável
+#### Permutabiliade condicional: expostos e não expostos são permutáveis mas após ajuste para uma ou mais variáveis
+
+Importante em estudos observacionais: permutabilidade marginal é pouco plausível
+
+
+## #13 Inferência causal (aula 3, parte 2/6) | Componentes do efeito causal médio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
